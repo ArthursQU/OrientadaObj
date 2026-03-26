@@ -1,15 +1,13 @@
-import com.meupacote.Carro;
-
 public class Teste {
-
     public static void main(String[] args){
-        Carro carro = new Carro("Chronos",2022,
-            "vermelho",4);
+        Motor motor = new Motor();
 
-        System.out.println("Modelo do carro: "+carro.modelo);
-        System.out.println("Ano do carro: "+ carro.getAno());
-        carro.setAno(2023);
-        carro.mostrarNumeroDePortas();
-        carro.ligar();
+        System.out.println("Status do motor "+motor.isLigado());
+        System.out.println("Chamado método para ligar o motor ");
+        motor.ligar();
+        System.out.println("Status do motor "+motor.isLigado());
+        System.out.println("Chamando método para desligar o motor ");
+        motor.desligar();
+        System.out.println("Status do motor "+motor.isLigado());
     }
 }
